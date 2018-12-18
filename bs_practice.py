@@ -18,17 +18,23 @@ if __name__ == "__main__":
                 cols = row.find_all('b')
                 cols = [ele.text.strip() for ele in cols]
                 data.append([ele for ele in cols if ele])
+                # print(str(data).strip('[\'I'))
 
     # convert list objects to string in data
-    str_data = ''.join(str(x) for x in data)
-    print(str_data)
+
+    # str_data = ''.join(str(x) for x in data)
+    # for x in str_data:
+    #     print(x)
+    #     print('\n')
+
+    # print(str_data)
     # print today's high, 52 weeks high, today's low, 52 weeks low
 
 
-    # i = 2
-    # while i <= 5:
-    #     print((str(data[i])).strip('$\xa0'))
-    #     i = i + 1
+    i = 2
+    while i <= 5:
+        print((str(data[i])).strip('[\'$\\xa0\']'))
+        i = i + 1
 
 
 
