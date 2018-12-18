@@ -20,48 +20,18 @@ if __name__ == "__main__":
                 data.append([ele for ele in cols if ele])
                 # print(str(data).strip('[\'I'))
 
-    # convert list objects to string in data
-
-    # str_data = ''.join(str(x) for x in data)
-    # for x in str_data:
-    #     print(x)
-    #     print('\n')
-
-    # print(str_data)
-    # print today's high, 52 weeks high, today's low, 52 weeks low
-
+    list = ['today_hi', 'today_low', 'year_hi', 'year_low']
 
     i = 2
+    j = 0
+    # convert list objects to string in data
     while i <= 5:
-        print((str(data[i])).strip('[\'$\\xa0\']'))
+        # data2 = ((str(data[i])).strip('[\'$\\xa0\']'))
+        list[j] = list[j] + " $" + (str(data[i])).strip('[\'$\\xa0\']')
+        # print((str(data[i])).strip('[\'$\\xa0\']'))
+        # print('\n\n')
         i = i + 1
+        j = j + 1
 
-
-
-    # i = 2
-    # for item in data:
-    #     print(item)
-    #     i = i + 1
-                # cols = [str.text.strip() for str in cols]
-                # print(cols)
-                # data.append([str for str in cols if str])
-                # print(data)
-                # print(cols)
-            # print(rows[2].find_all('td'))
-            # print('\n')
-            # cols = rows.find_all('td')
-            # print(cols)
-        # for row in rows:
-        #     bolds = row.find_all('b')
-        #     print(bolds)
-        # print('\n\n\n\n\n')
-
-
-    # data = []
-    # for row in rows:
-    #     cols = row.find_all('td')
-    #     cols = [str.text.strip() for str in cols]
-    #     data.append([str for str in cols if str])
-    #
-    # for x in data:
-    #     print(x)
+    # print today's high, 52 weeks high, today's low, 52 weeks low
+    print(list)
