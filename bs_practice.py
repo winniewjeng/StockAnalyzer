@@ -34,4 +34,8 @@ if __name__ == "__main__":
         j = j + 1
 
     # print today's high, 52 weeks high, today's low, 52 weeks low
-    print(list)
+    # print(list)
+    print(list[0])
+    print(list[1])
+    print(list[2])
+    print(list[3])
